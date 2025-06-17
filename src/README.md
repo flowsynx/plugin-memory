@@ -1,4 +1,4 @@
-# FlowSynx Memoey Plugin – FlowSynx Platform Integration
+## FlowSynx Memoey Plugin – FlowSynx Platform Integration
 
 The **Memoey Plugin** is a pre-packaged, plug-and-play integration component for the FlowSynx engine. It enables secure and configurable access to Memoey as part of FlowSynx’s no-code/low-code automation workflows.
 
