@@ -30,7 +30,8 @@ public class MemoryPlugin : IPlugin
                 ReadMe = "README.md",
                 RepositoryUrl = "https://github.com/flowsynx/plugin-memory",
                 ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "FlowSynx", "Memory", "InMemory" }
+                Tags = new List<string>() { "FlowSynx", "Memory", "InMemory" },
+                Category = PluginCategories.StorageTransfer
             };
         }
     }
