@@ -12,28 +12,23 @@ public class MemoryPlugin : IPlugin
     private MemorySpecifications _s3Specifications = null!;
     private bool _isInitialized;
 
-    public PluginMetadata Metadata
+    public PluginMetadata Metadata => new PluginMetadata
     {
-        get
-        {
-            return new PluginMetadata
-            {
-                Id = Guid.Parse("ac220180-021e-4150-b0e1-c4d4bdbfb9f0"),
-                Name = "Memory",
-                CompanyName = "FlowSynx",
-                Description = Resources.PluginDescription,
-                Version = new PluginVersion(1, 0, 0),
-                Category = PluginCategory.Storage,
-                Authors = new List<string> { "FlowSynx" },
-                Copyright = "© FlowSynx. All rights reserved.",
-                Icon = "flowsynx.png",
-                ReadMe = "README.md",
-                RepositoryUrl = "https://github.com/flowsynx/plugin-memory",
-                ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "flowsynx", "memory", "in-memory", "storage" },
-            };
-        }
-    }
+        Id = Guid.Parse("ac220180-021e-4150-b0e1-c4d4bdbfb9f0"),
+        Name = "Memory",
+        CompanyName = "FlowSynx",
+        Description = Resources.PluginDescription,
+        Version = new Version(1, 1, 0),
+        Category = PluginCategory.Storage,
+        Authors = new List<string> { "FlowSynx" },
+        Copyright = "© FlowSynx. All rights reserved.",
+        Icon = "flowsynx.png",
+        ReadMe = "README.md",
+        RepositoryUrl = "https://github.com/flowsynx/plugin-memory",
+        ProjectUrl = "https://flowsynx.io",
+        Tags = new List<string>() { "flowsynx", "memory", "in-memory", "storage" },
+        MinimumFlowSynxVersion = new Version(1, 1, 1),
+    };
 
     public PluginSpecifications? Specifications { get; set; }
     public Type SpecificationsType => typeof(MemorySpecifications);
